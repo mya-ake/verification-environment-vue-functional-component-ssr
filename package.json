@@ -1,0 +1,14 @@
+{
+  "name": "verification-environment-vue-functional-component-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mya-ake/verification-environment-vue-functional-component-ssr.git",
+  "author": "mya-ake <make.app.ts@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^2.3.2"
+  }
+}
