@@ -6,7 +6,8 @@
   "author": "mya-ake <make.app.ts@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "render": "node server-renderer/render.js"
   },
   "dependencies": {
     "nuxt": "^2.3.2"

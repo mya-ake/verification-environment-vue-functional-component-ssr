@@ -27,6 +27,8 @@ import NuxtLinkWrapper from '@/components/NuxtLinkWrapper';
 import RouterLinkWrapper from '@/components/RouterLinkWrapper';
 import BaseLinkWrapper from '@/components/BaseLinkWrapper';
 
+console.log(BaseLinkWrapper);
+
 export default {
   components: {
     BaseButtonWrapper,
@@ -36,7 +38,6 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .row {
   margin-bottom: 32px;
