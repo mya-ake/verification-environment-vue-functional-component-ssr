@@ -1,0 +1,1 @@
+# verification-environment-vue-functional-component-ssr
