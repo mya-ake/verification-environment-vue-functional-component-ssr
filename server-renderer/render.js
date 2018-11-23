@@ -6,7 +6,6 @@ const BaseButton = {
   render(h) {
     return h('button', null, this.$slots.default);
   },
-  _scopeId: '_bb',
 };
 
 const BaseButtonWrapper = {
@@ -15,7 +14,7 @@ const BaseButtonWrapper = {
   render(h, { children }) {
     return h('base-button', null, children);
   },
-  _scopeId: '_bbw',
+  _scopeId: '_scope_id_bbw',
 };
 
 const FuncBaseButton = {
@@ -24,7 +23,6 @@ const FuncBaseButton = {
   render(h, { children }) {
     return h('button', null, children);
   },
-  _scopeId: '_fbb',
 }
 
 const FuncBaseButtonWrapper = {
@@ -33,7 +31,7 @@ const FuncBaseButtonWrapper = {
   render(h, { children }) {
     return h('func-base-button', null, children);
   },
-  _scopeId: '_fbbw',
+  _scopeId: '_scope_id_fbbw',
 }
 
 Vue.component(BaseButton.name, BaseButton);
@@ -54,8 +52,8 @@ const app = new Vue({
 
 renderer.renderToString(app).then(html => {
   console.log(html)
-  // html: <div data-server-rendered="true"><button _bb>test</button> <button _fblw>test</button></div>
-  // expect: <div data-server-rendered="true"><button _bbw>test</button> <button _fblw>test</button></div>
+  // html: <div data-server-rendered="true"><button>test</button> <button _scope_id_fbbw>test</button></div>
+  // expect: <div data-server-rendered="true"><button _scope_id_fbbw>test</button> <button _scope_id_fbbw>test</button></div>
 }).catch(err => {
   console.error(err)
 })
